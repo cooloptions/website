@@ -325,6 +325,16 @@ a{
     background: rgba(0, 0, 50, 0.8);
 }
 
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    background-color: rgb(40,0,20);
+    color: #FFF;
+}
+
+
 @media (max-width: 768px) {
 
     .hero-content h3{
