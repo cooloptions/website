@@ -611,6 +611,10 @@ footer{
         width: 80vw;
     }
 
+    .features-item{
+        height: auto;
+     }
+
     .channel-gallery{
         flex-direction: row;
         align-items: center;
