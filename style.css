@@ -546,6 +546,11 @@ footer{
     .hero-container{
         height: 70vh;
     }
+    .hero-container .content > *{
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+    }
     .hero-heading{
         font-size: 1.9rem;
         text-align: center;
