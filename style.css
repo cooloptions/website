@@ -97,6 +97,44 @@ a{
 }
 
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 999;
+}
+nav{
+    position: relative;
+    width: 100%;
+    padding: .5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo{
+    position: relative;
+    height: 8vh;
+    width: auto;
+}
+.nav-cta{
+    position: relative;
+    padding: .75rem 1.25rem;
+    background: #F9D342;
+    color: #292826;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all .3s ease;
+}
+.nav-cta:hover{
+    background: #292826;
+    color: #F9D342;
+}
+
+
+
 
 .hero{
     position: relative;
@@ -118,7 +156,6 @@ a{
     width: 100%;
     height: 100%;
     padding: 1rem 2rem;
-    background: rgba(0, 0, 0, 0.6);
     color: #FFF;
     text-align: center;
     flex-direction: row;
@@ -163,7 +200,7 @@ a{
 .hero-title{
     font-size: 4rem;
     font-weight: 600;
-    color: #fec107;
+    color: #F9D342;
 }
 .hero-right{
     width: 45vw;
@@ -221,7 +258,7 @@ a{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: #f04400;
+    background: #292826;
     color: #FFF;
     font-weight: 500;
     border-radius: 12px;
@@ -242,7 +279,8 @@ a{
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(195, 0, 255, 0.4);
+    background: #292826a4;
+    /* background: #29282691; */
     z-index: 20;
 }
 .waves {
@@ -286,14 +324,13 @@ a{
 
 
 .poster{
+    padding-top: 2rem;
     height: auto;
     background: url('./img/posterbg.png') center/cover no-repeat;
     background-attachment: fixed;
     color: #FFF;
 }
-.poster-container{
-    margin-top: 4rem;
-}
+
 .poster-right{
     width: 50%;
     text-align: end;
@@ -310,16 +347,16 @@ a{
 }
 .devices{
     position: relative;
-    width: 720px;
+    width: 560px;
 }
 
 
 
 .features{
-    background-color: #cbd2ce;
+    background-color: azure;
 }
 .features .section-heading{
-    color: #171717;
+    color: #292826;
 }
 .features-container{
     margin-top: 2rem;
@@ -327,12 +364,13 @@ a{
 }
 .features-item{
     position: relative;
+    top: 2rem;
     margin: 1rem;
     width: 280px;
     height: 320px;
     background-color: #FFF;
     border-radius: 16px;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.15);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -340,9 +378,9 @@ a{
     overflow: hidden;
     transition: all .3s ease-in-out;
 }
-.features-item:hover{
-    transform: translate(-5px, -5px);
-    box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+.mid-item{
+    top: unset;
+    bottom: 1rem;
 }
 .features-item--img{
     position: relative;
@@ -415,14 +453,14 @@ a{
     padding: 1rem 1rem 4rem;
     width: 100%;
     height: auto;
-    background: #cbd2ce;
+    background: transparent;
 }
 .gallery .section-heading{
     margin: 1rem auto;
     color: #171717;
 }
 .gallery-img{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -440,13 +478,20 @@ a{
     justify-content: flex-start;
     border-radius: 16px;
 }
-.splide__slide .review-txt{
+
+.review{
+    border: 1px solid rgb(220, 220, 220);
+}
+
+.review .review-txt{
     position: relative;
     margin-bottom: 1rem;
     font-size: .9rem;
     text-align: center;
     color: #000;
 }
+
+
 .splide__arrow{
     position: relative;
     margin-top: 2rem;
@@ -455,8 +500,92 @@ a{
     font-size: 1.2rem;
     display: grid;
     place-content: center;
-    background: rgba(0, 0, 50, 0.8);
+    color: #292826;
+    background: #F9D342;
 }
+
+
+
+.partners-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.partners-container .subtitle{
+    position: relative;
+    margin: 1rem auto;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+}
+.partners-container .title{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.partners-wrapper{
+    position: relative;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+.partner-card{
+    position: relative;
+    flex: 1;
+    padding: .75rem;
+    background: #292826;
+    border-radius: 16px;
+    box-shadow: 1px 1px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .3s ease;
+}
+.partner-img{
+    position: relative;
+    margin-right: 1rem;
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+}
+.partner-content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.partner-content p{
+    position: relative;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+    color: aqua;
+    font-weight: 500;
+}
+.partner-card h3{
+    color: #FFF;
+}
+
+.partner-card:hover{
+    background: #F9D342;
+}
+.partner-card:hover .join-now{
+    color: #444;
+}
+.partner-card:hover .partner-name{
+    color: #222;
+}
+
 
 
 .aboutus{
@@ -476,6 +605,38 @@ a{
     align-items: center;
     justify-content: space-between;
 }
+
+.founders-container{
+    position: relative;
+    margin: 2rem auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.founders-container .column{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.founders-container .column .bar{
+    position: relative;
+    margin: .5rem auto 1rem;
+    width: 30%;
+    height: 4px;
+    background: #292826;
+    border-radius: 4px;
+}
+.founders-container .column p{
+    font-size: .8rem;
+    color: darkslategray;
+    font-weight: 500;
+}
+
 .about-img{
     position: relative;
     width: 360px;
@@ -497,7 +658,7 @@ a{
 .contact{
     padding: 0;
     height: 100vh;
-    background: url('./img/contactbg.jpg') center/cover no-repeat;
+    background: url('./img/contact.jpg') center/cover no-repeat;
     background-attachment: fixed;
 }
 .overlay{
@@ -521,16 +682,6 @@ footer{
 
 @media (max-width: 768px) {
 
-    header{
-        padding: 1rem;
-    }
-    .nav-logo{
-        width: 60px;
-        margin-right: -1rem;
-    }
-    .logo-title{
-        font-size: 1.25rem;
-    }
 
     .section{
         padding: 0rem;
@@ -544,12 +695,10 @@ footer{
         height: 85vh;
     }
     .hero-container{
-        height: 70vh;
+        height: 75vh;
     }
-    .hero-container .content > *{
-        text-align: center;
-        align-self: center;
-        justify-self: center;
+    .hero-subtitle{
+        margin-top: 2rem;
     }
     .hero-heading{
         font-size: 1.9rem;
@@ -578,8 +727,14 @@ footer{
         height: 90vh;
     }
 
+    .poster{
+        object-position: 60% 30%;
+    }
+
     .features-item{
-        margin: 1rem 0;
+        top: unset !important;
+        bottom: unset !important;
+        margin: .75rem 0;
     }
 
     .course-wrapper{
@@ -611,10 +766,6 @@ footer{
         width: 80vw;
     }
 
-    .features-item{
-        height: auto;
-     }
-
     .channel-gallery{
         flex-direction: row;
         align-items: center;
@@ -631,10 +782,28 @@ footer{
     .splide__arrow{
         display: none !important;
     }
+    
 
+
+    .partners-container{
+        padding: 1rem 0;
+    }
+    .partners-container .subtitle{
+        max-width: 100%;
+    }
+    .partners-wrapper{
+        padding: 0 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: unset;
+    }
     .partner-card{
+        margin: .75rem auto;
+        flex: unset;
         width: 100%;
     }
+
     
 
     .aboutus{
@@ -664,6 +833,13 @@ footer{
         font-size: 1rem;
     }
 
+    .contact{
+        object-position: end;
+    }
+
+    .wa-chat{
+        right: 1rem !important;
+    }
 
     footer p{
         font-size: .5rem;
