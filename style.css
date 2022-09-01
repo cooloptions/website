@@ -358,7 +358,6 @@ a{
 
 .aboutus{
     height: 100vh;
-    clip-path: polygon(0% 0%, 50% 15%, 100% 0%, 100% 100%, 0% 100%);
     background-color: #FFF;
 }
 .aboutus-container{
@@ -517,8 +516,8 @@ footer{
     .hero{
         height: 85vh;
     }
-    .hero-heading{
-        font-size: 1.9rem;
+    .hero-title{
+        font-size: 2rem;
         text-align: center;
     }
     .hero-desc{
@@ -595,7 +594,7 @@ footer{
     
 
     .aboutus{
-        padding-top: 6rem;
+        padding-top: 0rem;
         height: auto;
     }
     .about-right{
@@ -618,6 +617,10 @@ footer{
 
     .splide__slide, .gallery-img{
         width: 90vw;
+    }
+
+    .hero-heading{
+        font-size: 2rem;
     }
 
     footer p{
