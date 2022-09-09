@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
 
 *, ::after, ::before{
     margin: 0;
@@ -10,6 +11,27 @@
 body{
     padding: 1rem;
     background: azure;
+}
+a{
+    text-decoration: none;
+}
+
+.general-btn{
+    position: relative;
+    width: 100%;
+    margin: 1rem auto;
+    padding: .75rem 1.25rem;
+    background: #0099FF;
+    color: #FFF;
+    text-align: center;
+    border-radius: 2rem;
+    transition: all .3s ease;
+}
+.general-btn i{
+    margin-right: .75rem;
+}
+.general-btn:hover{
+    background: rgb(200, 100, 20);
 }
 
 .hero{
@@ -50,6 +72,10 @@ body{
     color: #FFF;
     text-align: right;
 }
+.logo{
+    font-family: 'Jura', sans-serif;
+}
+
 
 h1.hero-title{
     position: relative;
@@ -207,6 +233,7 @@ p.hero-subtitle{
 .author-wrapper{
     position: relative;
     width: 100%;
+    height: auto;
     padding: 1rem 1.5rem;
     margin: .5rem auto;
     background: #FFF;
@@ -239,6 +266,26 @@ p.hero-subtitle{
     object-fit: cover;
     border-radius: 0 2rem 2rem 2rem;
     box-shadow: -1px 1px 10px rgba(0,0,0,.1);
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer p{
+    color: darkslategray;
+}
+.sebi-logo{
+    position: relative;
+    margin: .25rem auto;
+    width: 72px;
+    height: auto;
+    opacity: .45;
 }
 
 @media (max-width: 768px) {
@@ -299,7 +346,13 @@ p.hero-subtitle{
     }
 
     .author-wrapper{
+        height: auto;
         padding: 1rem;
+    }
+    .author-wrapper .horizontal-wrapper .large .general-btn{
+        width: 100%;
+        align-self: center;
+        margin: 1rem auto;
     }
     .author-name{
         font-size: 1.5rem;
@@ -311,6 +364,7 @@ p.hero-subtitle{
     .author-img{
         width: 100%;
         height: 200px;
+        object-position: top;
         margin: 1rem auto;
         border-radius: 2rem 2rem 0 2rem;
     }
