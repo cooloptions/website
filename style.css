@@ -54,8 +54,11 @@ a{
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(31,29,29,0.5970763305322129) 52%, rgba(0,0,0,1) 100%);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+}
+.hero-btn{
+    width: auto;
 }
 
 .hero .logo-div{
@@ -230,6 +233,31 @@ p.hero-subtitle{
     color: red;
 }
 
+
+.swiper{
+    position: relative;
+    margin: 2rem auto;
+    width: 100%;
+}
+.swiper-title{
+    margin-top: 4rem;
+    text-align: center;
+    color: #333;
+}
+.swiper-subtitle{
+    text-align: center;
+    color: darkslategray;
+}
+.swiper-slide{
+    border-radius: 1.25rem;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.15);
+    max-height: 480px;
+    object-fit: cover;
+    object-position: top;
+    overflow: hidden;
+}
+
+
 .author-wrapper{
     position: relative;
     width: 100%;
@@ -253,7 +281,7 @@ p.hero-subtitle{
     color: darkslategray;
 }
 
-.author-wrapper .horizontal-wrapper{
+.author-horizontal-wrapper{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -271,6 +299,7 @@ p.hero-subtitle{
 .footer{
     position: relative;
     width: 100%;
+    height: auto;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -291,7 +320,7 @@ p.hero-subtitle{
 @media (max-width: 768px) {
 
     .hero{
-        height: 45vh;
+        height: 90vh;
     }
     .overlay{
         padding: 1rem;
@@ -303,7 +332,10 @@ p.hero-subtitle{
         text-align: center;
     }
     .logo-div .logo{
-        font-size: 1rem;
+        font-size: 1.5rem;
+    }
+    .sebi-reg{
+        font-size: .8rem;
     }
 
     h1.hero-title{
@@ -337,6 +369,7 @@ p.hero-subtitle{
     .benefits-wrapper .horizontal-wrapper{
         flex-direction: column;
         gap: unset;
+        height: auto;
     }
     .benefit-box{
         flex: unset;
@@ -345,27 +378,33 @@ p.hero-subtitle{
         height: auto;
     }
 
+    .swiper-title{
+        font-size: 1.5rem;
+    }
+    .swiper-slide{
+        max-height: 360px;
+    }
+
     .author-wrapper{
         height: auto;
         padding: 1rem;
     }
-    .author-wrapper .horizontal-wrapper .large .general-btn{
-        width: 100%;
-        align-self: center;
-        margin: 1rem auto;
-    }
     .author-name{
         font-size: 1.5rem;
     }
-    .author-wrapper .horizontal-wrapper{
+    .author-horizontal-wrapper{
+        height: auto;
         flex-direction: column-reverse;
         gap: unset;
+    }
+    .author-horizontal-wrapper .small{
+        margin-bottom: 1rem;
     }
     .author-img{
         width: 100%;
         height: 200px;
         object-position: top;
-        margin: 1rem auto;
+        margin: 0 auto;
         border-radius: 2rem 2rem 0 2rem;
     }
     .author-wrapper .content{
