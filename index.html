@@ -40,15 +40,11 @@
         >
       </div>
     </div>
-    <a
-      href="https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognisedFpi=yes&intmId=13"
-      target="_blank"
-      class="footer"
-    >
+    <div class="footer">
       <p>We're SEBI Registered</p>
       <img src="./assets/sebi.png" alt="INA300005090" class="sebi-logo" />
       <p>Registration No. INA300005090</p>
-    </a>
+    </div>
     <div class="benefits-wrapper">
       <div class="large">
         <h1 class="title">You Are In A Good Community</h1>
@@ -64,36 +60,36 @@
           ></path>
         </svg>
         <div class="horizontal-wrapper">
-          <div class="benefit-box">
+          <a href="https://t.me/cooloptions" class="benefit-box">
             <i class="bi-calendar-check card-icon"></i>
             <h3 class="card-title">Consistent</h3>
             <p class="card-content">
               We do the research to find out the best stocks, so you don't have
               to.
             </p>
-          </div>
-          <div class="benefit-box">
+          </a>
+          <a href="https://t.me/cooloptions" class="benefit-box">
             <i class="bi-graph-up-arrow card-icon"></i>
             <h3 class="card-title">Accurate</h3>
             <p class="card-content">
               Our members get more than 95% accurate buy & sell signals.
             </p>
-          </div>
-          <div class="benefit-box">
+          </a>
+          <a href="https://t.me/cooloptions" class="benefit-box">
             <i class="bi-search card-icon"></i>
             <h3 class="card-title">Personal Analysis</h3>
             <p class="card-content">
               We support traders in Intra-day/Short Term/Positional trading.
             </p>
-          </div>
-          <div class="benefit-box">
+          </a>
+          <a href="https://t.me/cooloptions" class="benefit-box">
             <i class="bi-briefcase card-icon"></i>
             <h3 class="card-title">Professional</h3>
             <p class="card-content">
               We're in this industry from many years and we know what we're
               doing.
             </p>
-          </div>
+          </a>
         </div>
       </div>
       <div class="small">
@@ -115,6 +111,11 @@
           >
         </div>
       </div>
+    </div>
+
+    <div class="video-wrapper">
+      <img src="./assets/poster.jpeg" alt="Poster" class="custom-poster">
+      <iframe class="video" height="315" src="https://www.youtube.com/embed/M-kGynu5Iw4?modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div class="course-wrapper">
@@ -164,7 +165,7 @@
     <!-- Slider main container -->
     <h1 class="swiper-title">Don't Take Our Word For It</h1>
     <h3 class="swiper-subtitle">Check Out Our Results</h3>
-    <div class="swiper">
+    <div class="swiper courses">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
@@ -194,7 +195,8 @@
     <h1 class="swiper-title">People Trust Us</h1>
     <h3 class="swiper-subtitle">Their Reviews</h3>
     <div class="spacer"></div>
-    <div class="reviews">
+    
+    <div class="swiper reviews">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
@@ -319,15 +321,11 @@
       />
     </a>
 
-    <a
-      href="https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognisedFpi=yes&intmId=13"
-      target="_blank"
-      class="footer"
-    >
+    <div class="footer">
       <p>We're SEBI Registered</p>
       <img src="./assets/sebi.png" alt="INA300005090" class="sebi-logo" />
       <p>Registration No. INA300005090</p>
-    </a>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -338,7 +336,7 @@
         showCursor: false,
       });
 
-      const swiper = new Swiper(".swiper", {
+      const courses = new Swiper(".courses", {
         // Optional parameters
         direction: "horizontal",
         loop: false,
@@ -374,10 +372,9 @@
       const reviews = new Swiper(".reviews", {
         // Optional parameters
         direction: "horizontal",
-        loop: true,
+        loop: false,
         spaceBetween: 20,
         slidesPerView: 1,
-        centeredSlides: true,
         breakpoints: {
           460: {
             slidesPerView: 2,
@@ -391,11 +388,6 @@
           1200: {
             slidesPerView: 5,
           },
-        },
-
-        // If we need pagination
-        pagination: {
-          el: ".reviews-pagination",
         },
       });
     </script>
