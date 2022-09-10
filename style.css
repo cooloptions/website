@@ -458,6 +458,10 @@ p.hero-subtitle{
 
 @media (max-width: 768px) {
 
+    .spacer{
+        height: 0;
+    }
+
     .hero{
         height: 60vh;
     }
