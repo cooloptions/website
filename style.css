@@ -598,7 +598,7 @@ p.hero-subtitle{
     .author-img{
         width: 100%;
         height: 200px;
-        object-position: top;
+        object-position: 50% 30%;
         margin: 0 auto;
         border-radius: 2rem 2rem 0 2rem;
     }
