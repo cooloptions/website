@@ -189,6 +189,74 @@
       <div class="swiper-button-next"></div>
     </div>
 
+    <div class="spacer"></div>
+
+    <h1 class="swiper-title">People Trust Us</h1>
+    <h3 class="swiper-subtitle">Their Reviews</h3>
+    <div class="spacer"></div>
+    <div class="reviews">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide review-card">
+          <img src="./assets/profile.png" alt="User Name" class="user-img" />
+          <h1 class="user-name">Sujindar Singh</h1>
+          <p><strong>Punjab</strong></p>
+          <br />
+          <p class="review-txt">
+            Since when I joined your Cool Options group my life is totally
+            change. Your predictions are very good. I never ever see this type
+            of predictions. Your knowledge is superb. Thanks a lot sir for
+            making me every day profits
+          </p>
+        </div>
+        <div class="swiper-slide review-card">
+          <img src="./assets/profile.png" alt="User Name" class="user-img" />
+          <h1 class="user-name">Rishabh</h1>
+          <p><strong>Rajasthan</strong></p>
+          <br />
+          <p class="review-txt">
+            Sir, you are my inspiration<br />
+            Guru App mere Shree Krishna ho and me apaka Arjun<br />
+            Thanks for all the videos and your efforts thanks a lot Brother
+          </p>
+        </div>
+        <div class="swiper-slide review-card">
+          <img src="./assets/profile.png" alt="User Name" class="user-img" />
+          <h1 class="user-name">Anuj</h1>
+          <p><strong>Bangalore</strong></p>
+          <br />
+          <p class="review-txt">
+            Sir appka course bahut solid hai bahut kuch sikha hai maine thank
+            you so much Harshit sir
+          </p>
+        </div>
+        <div class="swiper-slide review-card">
+          <img src="./assets/profile.png" alt="User Name" class="user-img" />
+          <h1 class="user-name">Gaurav</h1>
+          <p><strong>Noida</strong></p>
+          <br />
+          <p class="review-txt">
+            Great harshit sir ur analysis is perfect and i am in ur paid service
+            from last 2 years .i learn live with you also n understanding many
+            new things from you .great n all the best for future
+          </p>
+        </div>
+        <div class="swiper-slide review-card">
+          <img src="./assets/profile.png" alt="User Name" class="user-img" />
+          <h1 class="user-name">Sandeep</h1>
+          <p><strong>Lucknow</strong></p>
+          <br />
+          <p class="review-txt">
+            Aapki calls amazing hoti hai. I am very glad for joining your
+            premium service. Thank you so much for everything.
+            <br />Aapke Target always hit hote he and call me entry karne ka bhi
+            time mil jaata hai because you always provide by above only calls
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div class="author-wrapper">
       <h1 class="author-name">Founder's Message</h1>
       <div class="author-horizontal-wrapper">
@@ -273,7 +341,7 @@
       const swiper = new Swiper(".swiper", {
         // Optional parameters
         direction: "horizontal",
-        loop: true,
+        loop: false,
         spaceBetween: 20,
         slidesPerView: 1,
         breakpoints: {
@@ -300,6 +368,34 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+      });
+
+      const reviews = new Swiper(".reviews", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        spaceBetween: 20,
+        slidesPerView: 1,
+        centeredSlides: true,
+        breakpoints: {
+          460: {
+            slidesPerView: 2,
+          },
+          640: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 4,
+          },
+          1200: {
+            slidesPerView: 5,
+          },
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".reviews-pagination",
         },
       });
     </script>

@@ -14,6 +14,11 @@ body{
 a{
     text-decoration: none;
 }
+.spacer{
+    position: relative;
+    width: 100%;
+    height: 10vh;
+}
 
 
 .general-btn{
@@ -288,7 +293,7 @@ p.hero-subtitle{
 }
 
 
-.swiper{
+.swiper, .reviews{
     position: relative;
     padding: 0 1rem;
     margin: 2rem auto;
@@ -310,7 +315,31 @@ p.hero-subtitle{
     object-fit: cover;
     object-position: top;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
+
+.review-card{
+    padding: 1rem;
+    height: auto !important;
+    max-height: unset;
+}
+.user-img{
+    margin-bottom: 1rem;
+    width: 64px;
+    height: 64px;
+}
+.user-name{
+    font-size: 1.25rem;
+    color: #333;
+}
+.review-txt{
+    font-size: .9rem;
+    color: darkslategray;
+}
+
 
 .course-wrapper{
     position: relative;
