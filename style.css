@@ -15,6 +15,7 @@ a{
     text-decoration: none;
 }
 
+
 .general-btn{
     width: 100%;
     margin: 1rem auto;
@@ -42,8 +43,47 @@ a{
     background: rgb(200, 100, 20);
 }
 
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 999;
+}
+nav{
+    position: relative;
+    width: 100%;
+    padding: .5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo{
+    position: relative;
+    height: 8vh;
+    width: auto;
+}
+.nav-cta{
+    position: relative;
+    padding: .75rem 1.25rem;
+    background: #F9D342;
+    color: #292826;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all .3s ease;
+}
+.nav-cta:hover{
+    background: #292826;
+    color: #F9D342;
+}
+
+
 .hero{
     position: relative;
+    margin-top: 10vh;
     margin-bottom: 1rem;
     width: 100%;
     height: 95vh;
